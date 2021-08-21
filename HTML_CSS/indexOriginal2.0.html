@@ -1,0 +1,73 @@
+<!-- Informa ao navegador a versão do documento HTML-->
+<!DOCTYPE html>
+<!--Informar a linguagem da pagina-->
+<html lang="pt-br">
+    <!--Tag é por onde passamos as principas informações ao navegador-->
+    <head>
+        <!--tag usada para informar o conjunto de caracteres (dicionario) usado-->
+        <meta charset="UTF-8">
+        <!--Tag Com o titulo da pagina.-->
+        <title>Barbearia alura</title>
+        <!--tag para referenciar outros links, no caso o arquivo .CSS-->
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <!--link rel="stylesheet" href="style-home.css"-->
+        <!--Tag que possibilita o uso de css dentro do proprio arquivo html-->
+        <style>
+        </style>
+    </head>
+   <!--Tag é por onde passamos as informações do corpo da pagina ao navegador--> 
+    <body>
+        <!--Tag header contem o cabeçario, Não confundir com a tag head-->
+        <!-- Tag h1 para o primeiro conteudo que deve ficar em destaque-->
+        <header> 
+            <!--h1 class="tiuloPrincipal">Barbearia Alura</h1--> 
+            <div class="caixa">
+                <h1> 
+                    <img src="imagens\logo.png">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</li></a>
+                            <li><a href="produtos.html">Produtos</li></a>
+                            <li><a href="contato.html">Contatos</li></a>
+                        </ul>
+                    </nav>
+                </h1>
+            </div> 
+        </header>
+        
+            <!--tag img pra caregar um imagem-->
+            <img class="banner" src="imagens\banner.jpg">
+            <!--Tag usada para criar um area de marcação de conteudo-->
+            <div class="principal">
+                <h2 class="tituloCentralizado">Sobre a Barbearia Alura</h2>
+                <!-- tag <p> para marcar um paragrafo-->
+                <!--Tag <strong> Usada para destacar um trecho-->
+                <p class="sobre" >Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. 
+                Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>     
+                <!--Tag <em> usada para dar enfase em um trecho-->
+                <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+                <p class="sobre">Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. 
+                O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+            </div>
+        <main>
+            <div class="benficios">
+                <h3 class="tituloCentralizado">Beneficios</h3>
+                <!--Tag <ul> usada para criar um lista não ordenada-->
+                <ul class="listaBeneficios">
+                    <!--Tag <li> usada pra informar os itens da lista-->
+                    <li class="itens">Atendimento aos Clientes</li>
+                    <li class="itens">Espaços Diferenciados</li>
+                    <li class="itens">Localização</li>
+                    <li class="itens">Profissionais Qualificados</li>
+                </ul>
+                <img class="imagemBeneficios" src="imagens\beneficios.jpg">
+            </div>
+        </main>
+        
+        <footer>
+            <img src="imagens/logo-branco.png">
+            <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+        </footer>        
+    </body>
+</html>
